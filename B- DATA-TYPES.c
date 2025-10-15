@@ -3,7 +3,7 @@
 int main()
 {
     
-//  ---------------------------data types
+//  ---------------------------data types AND variables
                            //   format specifier                      //byte = 8bits
    int k = 25 ; //integer  (d or i)                                   2 or 4 byte
    int a ;
@@ -35,5 +35,31 @@ int main()
    printf("%d, %d, %u, %u\n", w, u, num1, num2);
    // output : 33, -45, 348, 4294967207
    
+//-----------------------------function sizeof 
+    int var1 = 77 ;
+    float var2 = 77 ;
+    printf("size of type int is : %d\n",sizeof(var1));
+    printf("size of type float is : %d\n",sizeof(var2));
+    printf("size of type char is : %d\n",sizeof(char));
+    // output :
+    /*
+    size of type int is : 4
+    size of type float is : 4
+    size of type char is : 1
+    */
+    
+//-------------------------variables naming conventions    
+   /*
+   #- a variable name must contain UPPERCASE or lowercase letters , numbers , and the under score character _ (_ and $ is a letter )
+   #- dont start with a number 
+   #- VARIABLE != variable != Variabler ......
+   #- dont use reserved keywords 
+   #- use meaningful name
+   #- it does not contain a space
+   #- while != WHILE != .....
+   #Pascal case : FirstNameExamlple
+   #camel case : firstNimeExample
+   #snake case : first_name_example
+   */ 
     return 0;
 }
